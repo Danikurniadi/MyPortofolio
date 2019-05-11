@@ -1,0 +1,238 @@
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.jumbotron{
+	background-image: url(../img/banner.jpg);
+	background-size: cover;
+	color: white;
+	text-align: center;
+	margin-top:0;
+    height: 80%;
+}
+.jumbotron h1{
+    margin-top: 10%;
+}
+.jumbotron a{
+    background-color: transparent;
+    border-color: white;
+}
+.jumbotron a:hover{
+    background-color: white;
+    border: transparent;
+    color: black;
+}
+
+.navbar{
+    color : white;
+}
+.navbar-brand{
+    color:white;
+}
+
+.nav-justified {
+  border-radius: 1px;
+}
+.nav-justified > li > a {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-bottom: 0;
+  font-weight: bold;
+  color: #FFF;
+  text-align: center;
+  background:url(../video/real2.jpg);
+  background-repeat: repeat-x;
+}
+.nav-justified > li:first-child > a {
+  border-radius: 5px 5px 0 0;
+}
+.nav-justified > li:last-child > a {
+  border-bottom: 0;
+  border-radius: 0 0 5px 5px;
+}
+
+@media (min-width: 768px) {
+  .nav-justified {
+    max-height: 52px;
+  }
+  .nav-justified > li > a {
+    border-right: 1px solid #d5d5d5;
+    border-left: 1px solid #fff;
+  }
+  .nav-justified > li:first-child > a {
+    border-left: 0;
+    border-radius: 5px 0 0 5px;
+  }
+  .nav-justified > li:last-child > a {
+    border-right: 0;
+    border-radius: 0 5px 5px 0;
+  }
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+
+.img-thumbnail{
+	width: 300px;
+	height :200px;
+}
+.container h1{
+	font-family: verdana;
+}
+.alert{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.gallery{
+	margin: 20px;
+}
+.logo{
+	float: left;
+	width: auto;
+	height: auto;
+	position: auto;
+    margin-top:50px;
+}
+.about-company{
+	text-align: center;
+	color: black;
+}
+.about-company p{
+	text-align: left;
+	font-size: 22px;
+	margin: 12px;
+	margin-left: 120px;
+}
+.testimoni{
+    position: auto;
+}
+.header-text{
+	font-size: 34px;
+	text-align: center;
+	font-style: bold;
+	font-family: sans-serif;
+	color: #222;
+}
+.footer p{
+    text-align:center;
+}
+.logo-wrap a {
+    font-size: 30px;
+    font-weight: 600;
+	color: white;
+}
+.logo-wrap a span {
+    display: block;
+    margin-top: -8px;
+	margin-left: 8px;
+}
+.logo-wrap a:hover {
+    color: #FFEB3B;
+    -webkit-transition: 0.5s all;
+}
+.w3ls-nav {
+    text-align: center;
+}
+ul.nav li a:hover {
+    	background-color: #F44336;
+    color: rgb(255, 255, 0);
+}
+ul.nav li.active a {
+	background-color: #F44336;
+    color: rgb(255, 255, 0);
+}
+.navbar-nav>li>a {
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+.navbar-nav {
+    margin: 0;
+    float: none;
+    display: inline-block;
+}
+.container-fluid {
+    padding: 0;
+}
+nav.navbar.w3-navbar {
+    background: rgba(0, 149, 150, 0.72);
+    margin: 0;
+	    border-radius: 0;
+}
+.agile-partner{
+  }
+}
+.social-links {
+    padding: 0;
+    list-style: none;
+    margin: 15px 0;
+    float: left;
+}
+.social-links li {
+    margin: 10px 10px 10px 0;
+    display: inline-block;
+    font-size: 36px;
+}
+.social-links li a {
+    color: #BBBBBB;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    /* border: 1px solid #D0D0D0; */
+    width: 52px;
+    height: 52px;
+    display: inline-block;
+    border-radius: 50%;
+    font-size: 26px;
+    text-align: center;
+    padding: 4px;
+}
+.social-links li.twitter a:hover {
+    color: #55acee;
+}
+.social-links li.skype a:hover {
+    color: #00aff0;
+}
+.social-links li.linkedin a:hover {
+    color: #0976b4;
+}
+.social-links li.googleplus a:hover {
+    color: #dd4b39;
+}
+.social-links li.youtube a:hover {
+    color: #b31217;
+}
+.social-links li.flickr a:hover {
+    color: #ff0084;
+}
+.social-links li.facebook a:hover {
+    color: #3b5998;
+}
+.social-links li.pinterest a:hover {
+    color: #cb2027;
+}
+.social-links li.instagram a:hover {
+    color: violet;
+}
+.col-sm-6 p{
+  text-align: center;
+  float: left;
+  margin: 12px;
+  margin-top: 0;
+}
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin-top: 40px;
+  border-top: 1px solid #eee;
+  text-align: center;
+  font-size: medium;
+   background-color:#222222;
+   color:#FFFFFF;
+   font-weight: bold ;
+
+}
+
