@@ -13,16 +13,55 @@ body {
 .jumbotron h1{
     margin-top: 10%;
 }
-.jumbotron a{
-    background-color: transparent;
-    border-color: white;
+.jumbotron-btn{
+    background-color: currentColor;
+    border: 1px solid currentColor;
+    padding: 10px 20px;
+    color: #d81900;
+    font-size: 11pt;
+    text-decoration: none;
+    box-shadow: 0 2px 2px 0 rgba(0,0,0.14),0 3px 1px -2px rgba(0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+    overflow: hidden;
+    cursor: pointer;
+    -webkit-transition:background-color 0.28s ease,color 0.28 ease,box-shadow 0.28 ease;
+    trasition:background-color 0.28 ease,color 0.28 ease, box-shadow 0.28 ease;
+    position: relative;
 }
-.jumbotron a:hover{
-    background-color: white;
-    border: transparent;
-    color: black;
+.jumbotron-btn span{
+  color: #FFF;
+  z-index: 1;
+  position: relative;
 }
-
+.jumbotron-btn::before{
+  content: '';
+  position: absolute;
+  background-color: #071017;
+  border: 50vh solid #1d4567;
+  width: 30vh;
+  height:30vh;
+  border-radius:50%;
+  display: block;
+  top: 50%
+  left:50%;
+  z-index: 0;
+  opacity: 1;
+  -webkit-transform:translate (-50%,-50%) scale(0);
+        -transform:translate (-50%,-50%) scale(0);  
+}
+.jumbotron-btn:hover{
+  color: #d81900;
+  box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14),0 1px 18px 0 rgba(0,0,0,0.12),0 3px 5px -1px rgba(0,0,0,0.2);
+}
+.jumbotron-btn:active::before,.jumbotron-btn:focus::before{
+  -webkit-transition:opacity 0.28s ease 0.364s,-webkit-transform 1.12s ease;
+  transition: opacity 0.28s ease 0.364s,-webkit-transform 1.12s ease;
+  transition: transform 1.12s ease,opacity 0.28 ease 0.364s;
+  transition: transform 1.12s ease,opacity 0.28 ease 0.364s,-webkit-transform 1.12s ease;
+  opacity: 0;
+}
+.jumbotron-btn:focus{
+  outline: none;
+}
 .navbar{
     color : white;
 }
@@ -220,7 +259,7 @@ nav.navbar.w3-navbar {
 .col-sm-6 p{
   text-align: center;
   float: left;
-  margin: 12px;
+  margin: 50px;
   margin-top: 0;
 }
 .footer {
@@ -235,4 +274,25 @@ nav.navbar.w3-navbar {
    font-weight: bold ;
 
 }
-
+.col-md-7 h2{
+  margin: 45px;
+}
+.col-md-7 p{
+  margin: 45px; 
+  font-style: italic;
+  font-family: serif;
+  font-size: large;
+  font-weight: bold;
+}
+.gal-button{
+  background-color: green;
+  color: white;
+  padding: 12px 23px;
+  border: none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0.14),0 3px 1px -2px rgba(0,0,0.2),0 1px 5px 0 rgba(0,0,0,0.12);
+  cursor: pointer;
+}
+.gal-button:active{
+  box-shadow: 0 5px #666;
+  transform:translatey(4px);
+}
